@@ -8,10 +8,13 @@ function onClick(event) {
 
 main.addEventListener('click', onClick)
 function onKeyDown(event){
-  console.log
+  console.log(event)
+  if (event.which === 74) {
+    alert('what the j')
+  }
   
 }
 
 const input = document.querySelector('input')
 
-input.addEventListener('keydown', onKeyDown )
+input.addEventListener('keydown', onKeyDown)
