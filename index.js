@@ -2,6 +2,7 @@
 const main = document.querySelector('main')
 // 2, Add on event listener 
 function onClick() {
+  alert('i was clicked')
   console.log('i was clicked woah')
 }
 
