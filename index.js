@@ -3,7 +3,6 @@ const main = document.querySelector('main')
 // 2, Add on event listener 
 function onClick(event) {
   alert('i was clicked')
-  console.log('i was clicked woah')
 }
 
 main.addEventListener('click', onClick)
@@ -20,11 +19,11 @@ input.addEventListener('keydown', onKeyDown)
 
 const divs = document.querySelectorAll('div')
 console.log(divs)
-divs[3].addEventListener
 
 function onDivClick(event) {
   event.stopPropagation()
-  console.log(event)
+  console.log(this.firstChild.nodeValue.trim()
+  + 'bubbled')
   
 }
 
