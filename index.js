@@ -5,4 +5,4 @@ function onClick() {
   console.log('i was clicked woah')
 }
 
-main.addEventListener('click', '')
+main.addEventListener('click', onClick)
