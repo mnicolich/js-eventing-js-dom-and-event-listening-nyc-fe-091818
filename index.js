@@ -20,3 +20,12 @@ input.addEventListener('keydown', onKeyDown)
 
 const divs = document.querySelectorAll('div')
 console.log(divs)
+
+function onDivClick(event) {
+  console.log(event)
+  
+}
+
+for (let div of divs) {
+  div.addEventListener('click', onDivClick)
+}
